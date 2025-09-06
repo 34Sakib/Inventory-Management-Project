@@ -7,7 +7,9 @@ use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\CategoryController;  
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\SaleController;
+use App\Http\Controllers\ReportController;
 
 Route ::get('/', [HomeController::class, 'homePage']);
 Route ::get('/dashboard', [DashboardController::class, 'dashboardPage']);
@@ -21,3 +23,5 @@ Route ::get('/userProfile', [UserController::class, 'profilePage']);
 Route ::get('/customerPage', [CustomerController::class, 'customerPage']);
 Route ::get('/productPage', [ProductController::class, 'productPage']);
 Route ::get('/invoicePage', [InvoiceController::class, 'invoicePage']);
+Route ::get('/salePage', [SaleController::class, 'salePage']);
+Route ::get('/reportPage', [ReportController::class, 'reportPage']);
